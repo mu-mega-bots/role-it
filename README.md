@@ -1,2 +1,4 @@
-# role-it
-Website for Role It, a Discord bot for role management
+# log.it
+log.it Discord Bot Website (provided by mega-bots individual bots)
+
+**COMING SOON**

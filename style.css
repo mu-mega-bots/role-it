@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #1b1b1b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(27, 27, 27, 0.95); /* Slight transparency for sleekness */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav {
+    overflow: visible; /* Ensure overflow is handled properly */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #48e245; /* Hover effect to match the gradient theme */
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 20px; /* Adjust padding to avoid overlap with fixed header */
+    background: linear-gradient(135deg, #48e245ca, #5183dfd8);
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+
+.rotate-text {
+    background: linear-gradient(45deg, #0044ff, #4ac723);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:rgb(255, 255, 255);
+    animation: rotateText 3s infinite linear;
+    font-weight: bolder;
+}
+
+/* Button styles */
+.cta-button {
+    padding: 10px 20px; /* Adjust padding for a better look */
+    background-color: #005eff; /* Primary background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-block; /* Make sure it behaves like a block element */
+    gap: 15px;
+    margin: 15px;
+}
+
+.cta-button:hover {
+    background-color: #0041b2; /* Darker shade for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #32bd57; /* Hover effect */
+    transform: scale(1.05); /* Slight hover scaling */
+}
+
+.cta-button.invite {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    background-color: #222dff; /* Distinct color to make it stand out */
+    color: white; /* Text color */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button.invite:hover {
+    background-color: #19e650; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.other-buttons {
+    margin-top: 15px; /* Space between invite button and other buttons */
+}
+
+@keyframes rotateText {
+    0% { content: "Guilded"; }
+    33% { content: "Discord"; }
+    66% { content: "Revolt"; }
+    100% { content: "Guilded"; }
+}
+
+.feature-grid, .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.platform i {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.platform img.custom-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.platform h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.platform p {
+    font-size: 1em;
+    color: #bbb;
+}
+
+.feature, .platform {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover, .platform:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #456ce2; /* Match footer hover to site color theme */
+}
+
+.center-text {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons .custom-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .custom-icon:hover {
+    transform: scale(1.2);
+}
+
+.social-container {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add some space above the icons */
+}
+
+.icon-container {
+    display: flex; /* Use flexbox for icon alignment */
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons p {
+    margin-bottom: 20px; /* Space between the text and icons */
+    color: #ffffff; /* Adjust color if necessary */
+    font-size: 1.2em; /* Optional: adjust font size */
+}
