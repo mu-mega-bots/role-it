@@ -5,75 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Role It - Discord Role Management Bot</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #2F3136; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #5865F2 0%, #FF8C00 50%, #1E1E1E 50%, #1E1E1E 100%);
+            color: #FFFFFF;
+        }
+        .content {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 { color: #FFFFFF; }
         p { max-width: 600px; margin: 0 auto; }
-        a { color: #5865F2; text-decoration: none; }
+        a { color: #FF8C00; text-decoration: none; }
         a:hover { text-decoration: underline; }
         .section { margin: 40px 0; }
-        .features, .platforms { display: flex; justify-content: center; gap: 20px; }
-        .feature, .platform { background: #f0f0f0; padding: 20px; border-radius: 8px; }
+        .features, .platforms { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .feature, .platform {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 300px;
+        }
+        .footer {
+            background: #1E1E1E;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="section">
-        <h1>Role It</h1>
-        <p>Welcome Role It, our new Discord bot! We're excited to bring you powerful role management tools. Thank you for your support!</p>
-    </div>
+    <div class="content">
+        <div class="section">
+            <h1>Role It</h1>
+            <p>Welcome Role It, our new Discord bot! We're excited to bring you powerful role management tools. Thank you for your support!</p>
+        </div>
 
-    <div class="section">
-        <h2>Effortless Role Management for Discord</h2>
-        <p>Your solution for managing roles with simple slash commands.</p>
-        <div>
-            <a href="https://discord.com/oauth2/authorize?client_id=1399139787159506974">Invite Role It Now</a>
-            <br>
-            <a href="https://discord.gg/J9N6evPF8Y">Join Discord</a>
-            <br>
-            <a href="#legal">Legal Info</a>
-            <br>
-            <a href="#other">Other Links</a>
+        <div class="section">
+            <h2>Effortless Role Management for Discord</h2>
+            <p>Your solution for managing roles with simple slash commands.</p>
+            <div>
+                <a href="YOUR_BOT_INVITE_LINK">Invite Role It Now</a><br>
+                <a href="https://discord.gg/J9N6evPF8Y">Join Discord</a><br>
+                <a href="#legal">Legal Info</a><br>
+                <a href="#other">Other Links</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Invite Role It to Your Discord Server</h2>
+            <p>Click the logo to invite Role It to your server</p>
+            <div>
+                <a href="YOUR_BOT_INVITE_LINK">
+                    <img src="assets/discord-logo.png" alt="Discord Logo" width="100">
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Role Management</h3>
+                    <p>Add, remove, create, or delete roles with commands like /addrole, /removerole, /createrole, /deleterole.</p>
+                </div>
+                <div class="feature">
+                    <h3>Role Insights</h3>
+                    <p>Get detailed role info with /roleinfo and list all roles with /listroles.</p>
+                </div>
+                <div class="feature">
+                    <h3>Nickname Control</h3>
+                    <p>Change user nicknames with /setnick or clear all roles with /clearroles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Supported Platform</h2>
+            <div class="platforms">
+                <div class="platform">
+                    <h3>Discord</h3>
+                    <p>Seamless role management for your Discord servers.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Invite Role It to Your Discord Server</h2>
-        <p>Click the logo to invite Role It to your server</p>
-        <div>
-            <a href="https://discord.com/oauth2/authorize?client_id=1399139787159506974">
-                <img src="assets/discord-logo.png" alt="Discord Logo" width="100">
-            </a>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Key Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Role Management</h3>
-                <p>Add, remove, create, or delete roles with commands like /addrole, /removerole, /createrole, /deleterole.</p>
-            </div>
-            <div class="feature">
-                <h3>Role Insights</h3>
-                <p>Get detailed role info with /roleinfo and list all roles with /listroles.</p>
-            </div>
-            <div class="feature">
-                <h3>Nickname Control</h3>
-                <p>Change user nicknames with /setnick or clear all roles with /clearroles.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Supported Platform</h2>
-        <div class="platforms">
-            <div class="platform">
-                <h3>Discord</h3>
-                <p>Seamless role management for your Discord servers.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="legal">
+    <div class="footer" id="legal">
         <p>© 2025 A Mega Utilities sub-brand Mega Bots | Role It</p>
     </div>
 </body>
